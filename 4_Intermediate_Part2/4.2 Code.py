@@ -1,5 +1,7 @@
 Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license()" for more information.
+>>> Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
 >>> import datetime
 >>> dir(datetime)
 ['MAXYEAR', 'MINYEAR', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'date', 'datetime', 'datetime_CAPI', 'sys', 'time', 'timedelta', 'timezone', 'tzinfo']
@@ -736,4 +738,32 @@ FILE
 18
 >>> print(randint(1,25))
 5
+>>> 
+				 
+SyntaxError: invalid syntax
+>>> from platform import platform
+>>> platform(1)
+'Windows-10-10.0.19041-SP0'
+>>> platform()
+'Windows-10-10.0.19041-SP0'
+>>> from platform import machine
+>>> print(machine())
+AMD64
+>>> from platform import processor
+>>> print(processor())
+AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+>>> from platform import system
+>>> system()
+'Windows'
+>>> from platform import python_implementation, python_version_tuple
+>>> python_implementation()
+'CPython'
+>>> for atr in python_version_tuple():
+	print(atr)
+
+	
+3
+8
+5
+>>> #I"m running 3.8.5... isn't 3.9 out?"
 >>> 
